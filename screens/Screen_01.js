@@ -1,8 +1,10 @@
 import React from "react";
 import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
+
 const Screen_01 = ({navigation}) =>{
     //const sourceImage = require('../assets/vs_blue.png')
+
     const sourceStar = require('../assets/star.png')
     return(
         <View style= {styles.container}>
@@ -15,22 +17,27 @@ const Screen_01 = ({navigation}) =>{
                 <View style ={styles.starStyle}>
                     <Image
                         source={sourceStar}
+                        style ={styles.starImage}
                     />
                     <Image
                         source={sourceStar}
+                        style ={styles.starImage}
                     />
                     <Image
                         source={sourceStar}
+                        style ={styles.starImage}
                     />
                     <Image
                         source={sourceStar}
+                        style ={styles.starImage}
                     />
                     <Image
                         source={sourceStar}
+                        style ={styles.starImage}
                     />
                 </View>
                 <TouchableOpacity>
-                    <Text>
+                    <Text style={styles.textSee}>
                         (Xem 828 đánh giá)
                     </Text>
                 </TouchableOpacity>
@@ -73,13 +80,15 @@ const styles = StyleSheet.create({
     },
     imageStyle:{
         marginTop: '10%',
-        width: '90%',
-        marginLeft:'5%'
+        //width: '90%',
+        marginLeft:'10%',
+        
     },
     headerText:{
         fontSize: 18,
         width:'90%',
-        marginLeft: '5%'
+        marginLeft: '5%',
+        marginTop:'5%'
     },
     rateStyle:{
         flexDirection: 'row',
@@ -92,17 +101,27 @@ const styles = StyleSheet.create({
         flexDirection:'row',
         marginRight: 20
     },
+    starImage:{
+        width:23*1.5,
+        height: 25*1.5,
+        marginRight: 10
+    },
+    textSee:{
+        fontSize: 18
+    },
     priceStyle:{
         flexDirection: 'row',
         marginLeft: '5%',
-        marginTop: 20
+        marginTop: 20,
+        alignItems:'center'
     },
     priceText:{
         fontWeight:'bold',
-        fontSize: 20
+        fontSize: 24,
+
     },
     priceDiscount:{
-        fontSize: 17,
+        fontSize: 18,
         color: 'grey',
         textDecorationLine: 'line-through',
         marginLeft: 22
@@ -115,7 +134,9 @@ const styles = StyleSheet.create({
     textLink:{
         color:'red',
         fontWeight:'bold',
-        marginRight: 10
+        marginRight: 10,
+        fontSize: 18,
+        marginBottom:10
     },
     choiceStyle:{
         width:'90%',

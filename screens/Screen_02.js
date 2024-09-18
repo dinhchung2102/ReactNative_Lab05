@@ -22,11 +22,11 @@ const Screen_02 = ({ navigation }) => {
                 
                 <View style={styles.pickColor}>
                     <TouchableOpacity onPress={() => {navigation.navigate('Screen_03')}}>
-                        <View style={{ backgroundColor: 'silver', height: 100, width: 100, marginBottom: 30, marginTop: 10 }} />
+                        <View style={{ backgroundColor: '#C5F1FB', height: 100, width: 100, marginBottom: 30, marginTop: 10 }} />
                     </TouchableOpacity>
                     
                     <TouchableOpacity onPress={() => {navigation.navigate('Screen_04')}}>
-                        <View style={{ backgroundColor: 'red', height: 100, width: 100, marginBottom: 30 }} />
+                        <View style={{ backgroundColor: '#F30D0D', height: 100, width: 100, marginBottom: 30 }} />
                     </TouchableOpacity>
                     
                     <TouchableOpacity onPress={() => {navigation.navigate('Screen_05')}}>
@@ -34,7 +34,7 @@ const Screen_02 = ({ navigation }) => {
                     </TouchableOpacity>
                     
                     <TouchableOpacity onPress={() => {navigation.navigate('Screen_01')}}>
-                        <View style={{ backgroundColor: 'blue', height: 100, width: 100, marginBottom: 10 }} />
+                        <View style={{ backgroundColor: '#234896', height: 100, width: 100, marginBottom: 10 }} />
                     </TouchableOpacity>
                 </View>
                 
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     },
     content: {
         flex: 3,
-        backgroundColor: 'grey'
+        backgroundColor: '#C4C4C4'
     },
     imageStyle: {
         marginLeft: '5%',
